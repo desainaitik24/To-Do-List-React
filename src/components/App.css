@@ -2,7 +2,7 @@ body {
   background: url(assets/stacked-waves-haikei.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 100vh;
   padding: 1rem;
   box-sizing: border-box;
   display: flex;
@@ -74,12 +74,12 @@ body {
   border: 2px solid hsl(198, 1%, 29%);
 }
 
-.delete{
+.delete {
   background: none;
   border: none;
 }
 
-img{
+img {
   height: 1.3rem;
 }
 
@@ -90,8 +90,9 @@ li {
 }
 
 @media (min-width: 481px) and (max-width: 769px) {
-  body{
+  body {
     background: url(assets/stacked-waves-haikei-tablet.svg);
+    background-size: cover;
   }
   .container {
     min-height: 75vh;
@@ -100,9 +101,12 @@ li {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
+  body {
+    background: url(assets/stacked-waves-haikei-tablet.svg);
+  }
   .container {
-    min-height: 80vh;
+    min-height: 65vh;
     min-width: 60vw;
     max-width: 80vw;
   }
